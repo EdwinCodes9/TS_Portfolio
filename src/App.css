@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
 .App {
   text-align: center;
@@ -63,6 +64,7 @@ h3 {
 
 li {
   color: white;
+  font-size: larger;
 }
 
 .outline{
@@ -82,3 +84,42 @@ li {
  }
 
 }
+
+#home{
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.socials{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.inside{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home{
+  margin-top: 8%;
+}
+
+h1{
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 50px;
+}
+
+
+@media (min-width: 800px) {
+ .socials{
+ width: 10vw;
+ }
+ }
