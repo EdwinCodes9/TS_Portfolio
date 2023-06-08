@@ -1,41 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&display=swap");
 
 .App {
   text-align: center;
 }
 
-.NAVBAR{
+.NAVBAR {
   display: flex;
   background-color: #282c34;
   width: 100vw;
   align-items: center;
 }
 
-ul{
+ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
+  padding: 0;
 }
 
-h3{
+ul li.cc {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+ul li.cc::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+ul li.cc:hover::after {
+  background-color: white;
+}
+
+
+h3 {
   color: white;
   justify-self: center;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
-.first-cont{
+.first-cont {
   display: flex;
   width: 22vw;
   align-items: center;
   justify-content: space-around;
 }
 
-.section-cont{
-  width: 74vw;
+.section-cont {
+  width: 70vw;
   align-items: center;
 }
 
-li{
+
+li {
   color: white;
+}
+
+.outline{
+  display: flex;
+  justify-content: space-around;
+}
+.profile{
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+}
+
+
+@media (max-width: 800px) {
+ .NAVBAR{
+  display: none;
+ }
+
 }
