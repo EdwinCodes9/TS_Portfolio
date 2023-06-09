@@ -27,7 +27,12 @@ const MiddleSection = () => {
           </div>
         </div>
         <div className="home">
-          <h1>Edwin Rodriguez</h1>
+        <div className="name"><h1>Edwin Rodriguez</h1></div>
+          <div className="lineup">
+            <div className="line"></div>
+            <div className="space"></div>
+            <h2>Software Engineer</h2>
+          </div>
         </div>
       </section>
     </>
